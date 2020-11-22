@@ -184,7 +184,11 @@ void Render() {
     
     currentScene->Render(&program);
     GLuint fontTextureID = Util::LoadTexture("font1.png");
-    Util::DrawText(&program, fontTextureID, std::to_string(Entity::life), 0.4f, 0.1f, glm::vec3(10, -3, 0));
+    
+    
+    if(dynamic_cast<Level0*>(currentScene))
+        Util::DrawText(&program, fontTextureID, "Project5", 0.5f, -0.1f, glm::vec3(3.5, -2, 0));
+    else Util::DrawText(&program, fontTextureID, std::to_string(Entity::life), 0.4f, 0.1f, glm::vec3(10, -3, 0));
     
     if(gameover){
         Util::DrawText(&program, fontTextureID, "YOU LOSE", 0.5f, -0.1f, currentScene->state.player->position);
