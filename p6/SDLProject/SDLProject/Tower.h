@@ -34,6 +34,7 @@ public:
     float damage;
     GLuint textureID;
     Mix_Chunk* bounce;
+    int level;
 };
 
 

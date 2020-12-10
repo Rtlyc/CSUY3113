@@ -18,6 +18,8 @@
 		4B8EEB0A257F740200281B28 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B8EEB03257F707000281B28 /* Util.cpp */; };
 		4B8EEB0F257FAACA00281B28 /* BG Music.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8EEB0D257FAAB600281B28 /* BG Music.mp3 */; };
 		4B8EEB11257FAACD00281B28 /* Shoot.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8EEB0E257FAABC00281B28 /* Shoot.wav */; };
+		4B8EEB152581FB5000281B28 /* Cookie.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8EEB142581FB3700281B28 /* Cookie.png */; };
+		4B8EEB172581FB5200281B28 /* Donut.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8EEB132581FB3700281B28 /* Donut.png */; };
 		DBDF1B532323DE3F007CECB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBDF1B522323DE3F007CECB1 /* main.cpp */; };
 		DBDF1B5E2323DE8D007CECB1 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBDF1B5D2323DE8D007CECB1 /* ShaderProgram.cpp */; };
 		DBDF1B612323DE9E007CECB1 /* shaders in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBDF1B5C2323DE8D007CECB1 /* shaders */; };
@@ -41,6 +43,8 @@
 				4B8EEB01257F705400281B28 /* font1.png in CopyFiles */,
 				4B8EEB0F257FAACA00281B28 /* BG Music.mp3 in CopyFiles */,
 				4B8EEB11257FAACD00281B28 /* Shoot.wav in CopyFiles */,
+				4B8EEB152581FB5000281B28 /* Cookie.png in CopyFiles */,
+				4B8EEB172581FB5200281B28 /* Donut.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,8 @@
 		4B8EEB04257F707000281B28 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		4B8EEB0D257FAAB600281B28 /* BG Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BG Music.mp3"; sourceTree = "<group>"; };
 		4B8EEB0E257FAABC00281B28 /* Shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shoot.wav; sourceTree = "<group>"; };
+		4B8EEB132581FB3700281B28 /* Donut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Donut.png; sourceTree = "<group>"; };
+		4B8EEB142581FB3700281B28 /* Cookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cookie.png; sourceTree = "<group>"; };
 		DBDF1B4F2323DE3F007CECB1 /* SDLProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDF1B522323DE3F007CECB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DBDF1B592323DE8D007CECB1 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
@@ -119,6 +125,8 @@
 				4B8EEB00257F705000281B28 /* font1.png */,
 				4B8EEB0D257FAAB600281B28 /* BG Music.mp3 */,
 				4B8EEB0E257FAABC00281B28 /* Shoot.wav */,
+				4B8EEB142581FB3700281B28 /* Cookie.png */,
+				4B8EEB132581FB3700281B28 /* Donut.png */,
 				DBDF1B5B2323DE8D007CECB1 /* glm */,
 				DBDF1B5D2323DE8D007CECB1 /* ShaderProgram.cpp */,
 				DBDF1B592323DE8D007CECB1 /* ShaderProgram.h */,

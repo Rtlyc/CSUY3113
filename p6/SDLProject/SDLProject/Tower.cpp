@@ -7,8 +7,9 @@
 Tower::Tower(int index, float size, float range, float damage, float cool_down, Map* map):Entity(size),index(index),timer(0),range(range),damage(damage),cool_down(cool_down){
     x = map->grids[index]->x;
     y = map->grids[index]->y;
-    textureID = Util::LoadTexture("angrybird.png");
+    textureID = Util::LoadTexture("Cookie.png");
     bounce = Mix_LoadWAV("Shoot.wav");
+    level = 1;
 }
 
 void Tower::Update(float delta_time, std::vector<Monster*>& monsters, std::vector<Bullet*>& bullets){

@@ -71,15 +71,23 @@ std::vector<Bullet*> bullets;
 
 bool CreateTower(std::vector<Tower*>& towers, int x, int y){
     int index = map->MousePosToIndex(x, y);
-    if(map->grids[index]->tower!=nullptr||map->grids[index]->type!=GRASS) return false;
+    Tower* potent = map->grids[index]->tower;
+    if(map->grids[index]->type!=GRASS||(potent&&potent->level==2)) return false;
     
     // money decrease
     if(money>=cost) money-=cost;
     else return false;
 //    int index, float size, float range, float damage, float cool_down, Map* map
+    if(map->grids[index]->tower==nullptr){
     Tower* new_tower = new Tower(index,1,3,2,1,map);
     towers.push_back(new_tower);
-    map->grids[index]->tower = new_tower;
+        map->grids[index]->tower = new_tower;}
+    else{
+        potent->textureID = Util::LoadTexture("Donut.png");
+        potent->level = 2;
+        potent->damage *= 2;
+        potent->range += 1;
+    }
     return true;
 }
 
@@ -277,7 +285,7 @@ void Render() {
         glUseProgram(program.programID);
         glClear(GL_COLOR_BUFFER_BIT);
         glClearColor(0.529, 0.807, 0.92, 0.0);
-        Util::DrawText(&texture_program, fontTextureID, "BIRD_DEFENSE", 0.5f, -0.14f, glm::vec3(-2, 2, 0));
+        Util::DrawText(&texture_program, fontTextureID, "DONUT_DEFENSE", 0.5f, -0.14f, glm::vec3(-2, 2, 0));
     }
 
     SDL_GL_SwapWindow(displayWindow);

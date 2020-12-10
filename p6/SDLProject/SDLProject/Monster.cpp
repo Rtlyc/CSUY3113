@@ -1,4 +1,3 @@
-#pragma once
 #include "Monster.h"
 #include "Bullet.h"
 #include <stdlib.h>
